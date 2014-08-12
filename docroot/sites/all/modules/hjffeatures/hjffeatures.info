@@ -1,0 +1,8 @@
+name = HJFfeatures
+description = testing the entity_view
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = hjffeatures
+features[features_api][] = api:2
+project path = sites/all/modules/
