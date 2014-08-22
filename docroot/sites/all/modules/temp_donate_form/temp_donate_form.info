@@ -1,0 +1,6 @@
+name = Temporary_Donation_page
+description = A temporary donation page.
+package = FLS
+version = 7.x-1.0
+core = 7.x
+files[] = donate.module
