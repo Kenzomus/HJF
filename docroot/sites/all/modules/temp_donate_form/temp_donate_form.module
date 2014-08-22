@@ -10,18 +10,57 @@
 /**
  * Donation type: USU.
  */
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+define('USU', 'Usu'); 
+=======
 define('USU', 'Support USU '); 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+define('USU', 'Support USU '); 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+define('USU', 'Support USU '); 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
 /**
  * Donation type: Research_EDU.
  */
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+define('Research_EDU', 'Research and education');
+
+/**
+=======
 define('support_research_EDU', 'Support_Research_Education');
 
 /**
  * Donation type: Other.
  */
 define('Other', 'Other');
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
+ *
+=======
+define('support_research_EDU', 'Support_Research_Education');
+
+/**
+ * Donation type: Other.
+ */
+define('Other', 'Other');
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+define('support_research_EDU', 'Support_Research_Education');
+
+/**
+ * Donation type: Other.
+ */
+define('Other', 'Other');
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+
+*/
 
 /**
  * Mail a letter.
@@ -120,7 +159,19 @@ function temp_donate_form_menu() {
   $items = array();
 
   $items['temp_donate_form/donation2'] = array(
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'title' => t('Donate for Military Medical Education and Research.'),
+=======
     'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+    'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+    'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
     'page callback' => 'drupal_get_form',
     'page arguments' => array('donate_form'),
     'access callback' => TRUE,
@@ -261,7 +312,19 @@ function temp_donate_form_mail_send_contributor($form_values) {
 
   // Specify 'to' and 'from' addresses.
   $to = $form_values['bill_email'];
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  $from = 'no-reply@HJF.org';
+=======
   $from = 'no-reply@hjf.org';
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+  $from = 'no-reply@hjf.org';
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+  $from = 'no-reply@hjf.org';
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
   $params = $form_values;
 
@@ -293,10 +356,29 @@ function temp_donate_form_mail_send_navy($form_values) {
   // Specify 'to' and 'from' addresses.
   $to = '';
   $to .= '';
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  $to .= ', ';
+  $to .= ', ';
+  
+  $from = 'no-reply@HJF.org';
+=======
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
   $to .= ',';
   $to .= ',';
   
   $from = 'no-reply@hjf.org';
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
   $params = $form_values;
 
@@ -374,4 +456,15 @@ function temp_donate_form_payleap_send($packet, $url) {
   curl_close($ch);
   return($response);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692

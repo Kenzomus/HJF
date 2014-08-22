@@ -18,6 +18,9 @@ function donate_form($form, &$form_state) {
     return donate_form_page_three($form, $form_state);
   }
   
+<<<<<<< HEAD
+
+=======
   $form['quaterdeck_donation'] = array(
     '#type' => 'markup',
     '#prefix' => '<div id="quarterdeck-donation">',
@@ -25,6 +28,7 @@ function donate_form($form, &$form_state) {
     '#suffix' => '</div>',
   );
   
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
   $options_donate_type = _donate_type_get_list_options();
   //$donation_type_select = isset($form_state['values']['donation_type']) ? $form_state['values']['donation_type'] : key($options_donate_type);
   $form['donation_type'] = array(
@@ -343,7 +347,19 @@ function donate_form($form, &$form_state) {
 
   $form['donation_payment']['check'] = array(
     '#type' => 'item',
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). '</p>'.'<p>HJF Attn: Donation<br>s 6720-A Rockledge Drive Suite 100<br> Bethesda, MD 208174</p>',
+=======
     '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). HJF Attn: Donations 6720-A Rockledge Drive Suite 100 Bethesda, MD 20817 '</p>'.'<p><br> </p>',
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+    '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). HJF Attn: Donations 6720-A Rockledge Drive Suite 100 Bethesda, MD 20817 '</p>'.'<p><br> </p>',
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+    '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). HJF Attn: Donations 6720-A Rockledge Drive Suite 100 Bethesda, MD 20817 '</p>'.'<p><br> </p>',
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
     '#states' => array(
       'visible' => array(
         ':input[name="payment_type"]' => array( 'value' => CHECK),
@@ -847,10 +863,29 @@ function donate_form_page_three($form, &$form_state) {
   
   $thankyou = '';
   $thankyou .= '<p>' . 'Dear ' . $values['bill_fname'] . ','. '</p>';
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  $thankyou .= '<p>' . 'Thank you for supporting HJF ' . '$' . $donate_amount .
+                     '. HJF thank you text .' . '</p>';
+  $thankyou .= $response;
+  $thankyou .= '<p>' . 'Welcome Aboard!' . '<br>' . 'HJF.org' . '</p>';
+=======
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
   $thankyou .= '<p>' . 'Thank you for supporting HJF  through your generous donation of ' . '$' . $donate_amount .
                      '. Your contribution is working hard at HJF.  Your assistance will help the..........' . '</p>';
   $thankyou .= $response;
   $thankyou .= '<p>' . 'Welcome Aboard!' . '<br>' . 'HJF' . '</p>';
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
   
   $form['confirmation'] = array(
     '#markup' => '<div>' . $thankyou . '</div>',
@@ -896,38 +931,17 @@ function donation_acknowledgement_ajax_callback($form, &$form_state) {
 }
 
 function _donate_type_get_list_options(){
-  return drupal_map_assoc(array(GENERAL_GIFT, CAMPAIGNS, PLAQUES));
+  return drupal_map_assoc(array(USU, Research_Edn));
 }
 
 function _donation_type_get_second_dropdown_options($key = '') {
   $options = array(
-    GENERAL_GIFT => drupal_map_assoc(array(
-      'General Gift',
-      'In Memoriam',
+    Researc_Edu => drupal_map_assoc(array(
+      ''In Memoriam',
       'In Honor',
     )),
     
-    CAMPAIGNS => drupal_map_assoc(array(
-      '',
-      'Membership Renewal',
-      'Blessing of the fleets',
-      'Log Room',
-    )),
    
-    PLAQUES => drupal_map_assoc(array(
-      '',
-      'USS Belknap',
-      'USS Bunker Hill',
-      'USS Caperton DD-650',
-      'USS Chester',
-      'USS Monitor',
-      'USS Oakland CL-95',
-      'USS Saint Paul CA-73',
-      'USS Sam Houston SSBNSSN 609',
-      'USS Tide AM-125',
-      'WAVES',
-      'WWII Sub Vets'
-    )),
   );
   if (isset($options[$key])) {
     return $options[$key];
