@@ -8,20 +8,46 @@
 
  
 /**
- * Donation type: General Gift.
+ * Donation type: USU.
  */
-define('GENERAL_GIFT', 'General Gift'); 
+<<<<<<< HEAD
+<<<<<<< HEAD
+define('USU', 'Usu'); 
+=======
+define('USU', 'Support USU '); 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+define('USU', 'Support USU '); 
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
 /**
- * Donation type: Campaigns.
+ * Donation type: Research_EDU.
  */
-define('CAMPAIGNS', 'Campaigns');
+<<<<<<< HEAD
+<<<<<<< HEAD
+define('Research_EDU', 'Research and education');
 
 /**
- * Donation type: Plaques.
- */
-define('PLAQUES', 'Plaques');
+=======
+define('support_research_EDU', 'Support_Research_Education');
 
+/**
+ * Donation type: Other.
+ */
+define('Other', 'Other');
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+
+ *
+=======
+define('support_research_EDU', 'Support_Research_Education');
+
+/**
+ * Donation type: Other.
+ */
+define('Other', 'Other');
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+
+*/
 
 /**
  * Mail a letter.
@@ -55,11 +81,13 @@ define('CHECK', 'check');
 
 //test
 
-define('PL_API_USERNAME', 'Ibrahima5290_API');
-define('PL_TRANSACTION_KEY', 'Xa3nfXx`9^w`QX6G');
-define('PL_SINGLE_CREDIT_CARD_URL', 'https://uat.payleap.com/TransactServices.svc/ProcessCreditCard');
-define('PL_RECURRING_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/AddRecurringCreditCard');
-define('PL_RECURRING_PROCESS_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/ProcessCreditCard');
+/**
+*define('PL_API_USERNAME', 'Ibrahima5290_API');
+*define('PL_TRANSACTION_KEY', 'Xa3nfXx`9^w`QX6G');
+*define('PL_SINGLE_CREDIT_CARD_URL', 'https://uat.payleap.com/TransactServices.svc/ProcessCreditCard');
+*define('PL_RECURRING_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/AddRecurringCreditCard');
+*define('PL_RECURRING_PROCESS_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/ProcessCreditCard');
+*/
 //define('PL_VENDOR_ID','1085');
 
 //production
@@ -79,7 +107,8 @@ variable_set('donate_customer_id', variable_get('donate_customer_id'));
 
 /**
  * Invoice ID.
- */
+ */:wq
+
 variable_set('donate_invoice_id', variable_get('donate_invoice_id'));
 
 
@@ -117,7 +146,15 @@ function temp_donate_form_menu() {
   $items = array();
 
   $items['temp_donate_form/donation2'] = array(
-    'title' => t('Helping US Navy Memorial is easy.'),
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'title' => t('Donate for Military Medical Education and Research.'),
+=======
+    'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+    'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
     'page callback' => 'drupal_get_form',
     'page arguments' => array('donate_form'),
     'access callback' => TRUE,
@@ -127,7 +164,7 @@ function temp_donate_form_menu() {
   $items['temp_donate_form/credit-cart/cvv-info'] = array(
     'title' => 'CVV Information',
     'page callback' => 'donate_credit_cvv_info',
-    'access arguments' => array('access content'),
+   'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
     'file' => 'temp_donate_form_credit.pages.inc',
   );
@@ -258,7 +295,15 @@ function temp_donate_form_mail_send_contributor($form_values) {
 
   // Specify 'to' and 'from' addresses.
   $to = $form_values['bill_email'];
-  $from = 'no-reply@navymemorial.org';
+<<<<<<< HEAD
+<<<<<<< HEAD
+  $from = 'no-reply@HJF.org';
+=======
+  $from = 'no-reply@hjf.org';
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+  $from = 'no-reply@hjf.org';
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
   $params = $form_values;
 
@@ -289,11 +334,24 @@ function temp_donate_form_mail_send_navy($form_values) {
 
   // Specify 'to' and 'from' addresses.
   $to = '';
-  $to .= 'phoang@figleaf.com';
-  $to .= ', MPollow@navymemorial.org';
-  $to .= ', smatirne@navymemorial.org';
+  $to .= '';
+<<<<<<< HEAD
+<<<<<<< HEAD
+  $to .= ', ';
+  $to .= ', ';
   
-  $from = 'no-reply@navymemorial.org';
+  $from = 'no-reply@HJF.org';
+=======
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+  $to .= ',';
+  $to .= ',';
+  
+  $from = 'no-reply@hjf.org';
+<<<<<<< HEAD
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
 
   $params = $form_values;
 
@@ -371,3 +429,11 @@ function temp_donate_form_payleap_send($packet, $url) {
   curl_close($ch);
   return($response);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
+=======
+
+>>>>>>> 7ccb839fe5f403ee6a2a82a487e57761a62ef692
