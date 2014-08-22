@@ -21,7 +21,7 @@ function donate_form($form, &$form_state) {
   $form['quaterdeck_donation'] = array(
     '#type' => 'markup',
     '#prefix' => '<div id="quarterdeck-donation">',
-    '#markup' => '<p>For <a href="http://shipsstore.navymemorial.org/membership">Quarterdeck Club Membership</a> or monthly donation, please click here to <a href="https://secure.etransfer.com/USNavyMemorial/donate.cfm">join today</a>.</p>',
+    '#markup' => '<p>For <a href=""></a> or monthly donation, please click here to <a href="">join today</a>.</p>',
     '#suffix' => '</div>',
   );
   
@@ -343,7 +343,7 @@ function donate_form($form, &$form_state) {
 
   $form['donation_payment']['check'] = array(
     '#type' => 'item',
-    '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). '</p>'.'<p>The United States Navy Memorial<br> 701 Pennsylvania Avenue, NW<br> Suite 123<br> Washington, DC 20004</p>',
+    '#markup' => '<p>'. t('If you would like to pay by check, please review and submit the donation then print and mail a copy with a check to:'). HJF Attn: Donations 6720-A Rockledge Drive Suite 100 Bethesda, MD 20817 '</p>'.'<p><br> </p>',
     '#states' => array(
       'visible' => array(
         ':input[name="payment_type"]' => array( 'value' => CHECK),
@@ -847,10 +847,10 @@ function donate_form_page_three($form, &$form_state) {
   
   $thankyou = '';
   $thankyou .= '<p>' . 'Dear ' . $values['bill_fname'] . ','. '</p>';
-  $thankyou .= '<p>' . 'Thank you for supporting the U.S Navy Memorial through your generous donation of ' . '$' . $donate_amount .
-                     '. Your contribution is working hard at the U.S. Navy Memorial.  Your assistance will help preserve the heritage of our country\'s sea service veterans.' . '</p>';
+  $thankyou .= '<p>' . 'Thank you for supporting HJF  through your generous donation of ' . '$' . $donate_amount .
+                     '. Your contribution is working hard at HJF.  Your assistance will help the..........' . '</p>';
   $thankyou .= $response;
-  $thankyou .= '<p>' . 'Welcome Aboard!' . '<br>' . 'U.S. Navy Memorial' . '</p>';
+  $thankyou .= '<p>' . 'Welcome Aboard!' . '<br>' . 'HJF' . '</p>';
   
   $form['confirmation'] = array(
     '#markup' => '<div>' . $thankyou . '</div>',
@@ -871,7 +871,7 @@ function donate_form_page_three($form, &$form_state) {
 
 function donate_form_page_three_submit($form, &$form_state) {
   
-  $form_state['redirect'] = array('http://www.navymemorial.org/');
+  $form_state['redirect'] = array('http://www.hjf.org/');
 }
 
 function donate_form_page_three_back($form, &$form_state){

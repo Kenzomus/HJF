@@ -8,19 +8,19 @@
 
  
 /**
- * Donation type: General Gift.
+ * Donation type: USU.
  */
-define('GENERAL_GIFT', 'General Gift'); 
+define('USU', 'Support USU '); 
 
 /**
- * Donation type: Campaigns.
+ * Donation type: Research_EDU.
  */
-define('CAMPAIGNS', 'Campaigns');
+define('support_research_EDU', 'Support_Research_Education');
 
 /**
- * Donation type: Plaques.
+ * Donation type: Other.
  */
-define('PLAQUES', 'Plaques');
+define('Other', 'Other');
 
 
 /**
@@ -55,11 +55,13 @@ define('CHECK', 'check');
 
 //test
 
-define('PL_API_USERNAME', 'Ibrahima5290_API');
-define('PL_TRANSACTION_KEY', 'Xa3nfXx`9^w`QX6G');
-define('PL_SINGLE_CREDIT_CARD_URL', 'https://uat.payleap.com/TransactServices.svc/ProcessCreditCard');
-define('PL_RECURRING_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/AddRecurringCreditCard');
-define('PL_RECURRING_PROCESS_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/ProcessCreditCard');
+/**
+*define('PL_API_USERNAME', 'Ibrahima5290_API');
+*define('PL_TRANSACTION_KEY', 'Xa3nfXx`9^w`QX6G');
+*define('PL_SINGLE_CREDIT_CARD_URL', 'https://uat.payleap.com/TransactServices.svc/ProcessCreditCard');
+*define('PL_RECURRING_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/AddRecurringCreditCard');
+*define('PL_RECURRING_PROCESS_CREDIT_CARD_URL', 'https://uat.payleap.com/MerchantServices.svc/ProcessCreditCard');
+*/
 //define('PL_VENDOR_ID','1085');
 
 //production
@@ -79,7 +81,8 @@ variable_set('donate_customer_id', variable_get('donate_customer_id'));
 
 /**
  * Invoice ID.
- */
+ */:wq
+
 variable_set('donate_invoice_id', variable_get('donate_invoice_id'));
 
 
@@ -117,7 +120,7 @@ function temp_donate_form_menu() {
   $items = array();
 
   $items['temp_donate_form/donation2'] = array(
-    'title' => t('Helping US Navy Memorial is easy.'),
+    'title' => t('Donate to support the mission of the Uniformed Services University (USU).'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('donate_form'),
     'access callback' => TRUE,
@@ -127,7 +130,7 @@ function temp_donate_form_menu() {
   $items['temp_donate_form/credit-cart/cvv-info'] = array(
     'title' => 'CVV Information',
     'page callback' => 'donate_credit_cvv_info',
-    'access arguments' => array('access content'),
+   'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
     'file' => 'temp_donate_form_credit.pages.inc',
   );
@@ -258,7 +261,7 @@ function temp_donate_form_mail_send_contributor($form_values) {
 
   // Specify 'to' and 'from' addresses.
   $to = $form_values['bill_email'];
-  $from = 'no-reply@navymemorial.org';
+  $from = 'no-reply@hjf.org';
 
   $params = $form_values;
 
@@ -289,11 +292,11 @@ function temp_donate_form_mail_send_navy($form_values) {
 
   // Specify 'to' and 'from' addresses.
   $to = '';
-  $to .= 'phoang@figleaf.com';
-  $to .= ', MPollow@navymemorial.org';
-  $to .= ', smatirne@navymemorial.org';
+  $to .= '';
+  $to .= ',';
+  $to .= ',';
   
-  $from = 'no-reply@navymemorial.org';
+  $from = 'no-reply@hjf.org';
 
   $params = $form_values;
 
@@ -371,3 +374,4 @@ function temp_donate_form_payleap_send($packet, $url) {
   curl_close($ch);
   return($response);
 }
+
