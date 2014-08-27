@@ -30,7 +30,7 @@ function social_media_links_social_media_links_platform_info() {
 
   $platforms['linkedin'] = array(
     'title' => t('LinkedIn'),
-    'base url' => 'http://www.linkedin.com/pub/',
+    'base url' => 'http://www.linkedin.com/',
   );
 
   $platforms['pinterest'] = array(

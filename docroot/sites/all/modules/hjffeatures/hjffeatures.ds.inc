@@ -56,6 +56,7 @@ function hjffeatures_ds_layout_settings_info() {
         6 => 'field_proposal_invitation',
         8 => 'field_preproposal_loideadline',
         9 => 'field_prepropsal_loideadline_dat',
+        10 => 'field_funding_related_services',
       ),
     ),
     'fields' => array(
@@ -69,6 +70,7 @@ function hjffeatures_ds_layout_settings_info() {
       'field_opportunity_number' => 'left',
       'field_preproposal_loideadline' => 'right',
       'field_prepropsal_loideadline_dat' => 'right',
+      'field_funding_related_services' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(

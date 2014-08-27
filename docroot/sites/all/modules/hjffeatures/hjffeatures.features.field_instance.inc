@@ -524,6 +524,36 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_large' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_original' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -570,6 +600,36 @@ function hjffeatures_field_default_field_instances() {
         'weight' => 1,
       ),
       'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_large' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_original' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'media_small' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -855,6 +915,122 @@ function hjffeatures_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-clients-field_client_related_service'
+  $field_instances['node-clients-field_client_related_service'] = array(
+    'bundle' => 'clients',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'another_client_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_client_related_service',
+    'label' => 'client_related_service',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-clients-field_client_related_success_sto'
+  $field_instances['node-clients-field_client_related_success_sto'] = array(
+    'bundle' => 'clients',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'another_client_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_client_related_success_sto',
+    'label' => 'Related Succees Story',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-clients-field_logo'
   $field_instances['node-clients-field_logo'] = array(
     'bundle' => 'clients',
@@ -1014,6 +1190,64 @@ function hjffeatures_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-funding_opportunity-field_funding_related_services'
+  $field_instances['node-funding_opportunity-field_funding_related_services'] = array(
+    'bundle' => 'funding_opportunity',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 13,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_funding_related_services',
+    'label' => 'funding_related_services',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 14,
     ),
   );
 
@@ -1393,6 +1627,8 @@ function hjffeatures_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'entityconnect_unload_add' => 1,
+    'entityconnect_unload_edit' => 1,
     'field_name' => 'field_relate_sponsor',
     'label' => 'Sponsor',
     'required' => 0,
@@ -1418,6 +1654,10 @@ function hjffeatures_field_default_field_instances() {
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
+        'references_dialog_add' => 1,
+        'references_dialog_edit' => 1,
+        'references_dialog_search' => 0,
+        'references_dialog_search_view' => '',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
@@ -1617,9 +1857,8 @@ function hjffeatures_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 12,
       ),
       'search_result' => array(
@@ -2181,60 +2420,8 @@ function hjffeatures_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-services-field_related_clientbis'
-  $field_instances['node-services-field_related_clientbis'] = array(
-    'bundle' => 'services',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_related_clientbis',
-    'label' => 'related_clientbis',
-    'required' => 0,
-    'settings' => array(
-      'jquery_ui_multiselect' => array(
-        'dividerLocation' => 0.5,
-        'doubleClickable' => 1,
-        'dragToAdd' => 1,
-        'enabled' => 0,
-        'height' => 0,
-        'includeAddAll' => 1,
-        'includeRemoveAll' => 1,
-        'searchable' => 1,
-        'selectedContainerOnLeft' => 1,
-        'sortable' => 1,
-        'width' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 39,
-    ),
-  );
-
-  // Exported field_instance: 'node-services-field_related_opportunities'
-  $field_instances['node-services-field_related_opportunities'] = array(
+  // Exported field_instance: 'node-services-field_service_related_success_st'
+  $field_instances['node-services-field_service_related_success_st'] = array(
     'bundle' => 'services',
     'default_value' => NULL,
     'deleted' => 0,
@@ -2257,8 +2444,8 @@ function hjffeatures_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_related_opportunities',
-    'label' => 'related_opportunities',
+    'field_name' => 'field_service_related_success_st',
+    'label' => 'service_related_success_story',
     'required' => 0,
     'settings' => array(
       'jquery_ui_multiselect' => array(
@@ -2281,63 +2468,7 @@ function hjffeatures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 37,
-    ),
-  );
-
-  // Exported field_instance: 'node-services-field_related_success_story'
-  $field_instances['node-services-field_related_success_story'] = array(
-    'bundle' => 'services',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_related_success_story',
-    'label' => 'related_success_story',
-    'required' => 0,
-    'settings' => array(
-      'jquery_ui_multiselect' => array(
-        'dividerLocation' => 0.5,
-        'doubleClickable' => 1,
-        'dragToAdd' => 1,
-        'enabled' => 0,
-        'height' => 0,
-        'includeAddAll' => 1,
-        'includeRemoveAll' => 1,
-        'searchable' => 1,
-        'selectedContainerOnLeft' => 1,
-        'sortable' => 1,
-        'width' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 38,
+      'weight' => 36,
     ),
   );
 
@@ -2795,14 +2926,17 @@ function hjffeatures_field_default_field_instances() {
   t('Programs');
   t('Proposal deadline');
   t('Provide date if preposal deadline is checked');
+  t('Related Succees Story');
   t('Sponsor');
   t('Tags');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
   t('Type');
   t('Upload an image to go with this article.');
+  t('client_related_service');
   t('contact_email');
   t('contact_phone');
+  t('funding_related_services');
   t('icon');
   t('image1');
   t('opportunity_number');
@@ -2811,13 +2945,11 @@ function hjffeatures_field_default_field_instances() {
   t('proposal_required');
   t('rad_related_client');
   t('rad_related_services');
-  t('related_clientbis');
   t('related_clients');
-  t('related_opportunities');
   t('related_services');
-  t('related_success_story');
   t('related_url');
   t('service_category');
+  t('service_related_success_story');
   t('success_story_related_rads');
   t('tags');
   t('tags_bis');

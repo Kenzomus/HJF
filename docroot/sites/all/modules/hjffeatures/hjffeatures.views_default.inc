@@ -1295,23 +1295,33 @@ function hjffeatures_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-    'field_proposal_required' => 'field_proposal_required',
-    'field_relate_sponsor' => 'field_relate_sponsor',
-    'field_related_announcement_type' => 'field_related_announcement_type',
+    'field_opportunity_number' => 'field_opportunity_number',
+    'field_related_url' => 'field_related_url',
     'title_1' => 'title_1',
+    'field_relate_sponsor' => 'field_relate_sponsor',
+    'field_related_program' => 'field_related_program',
+    'field_related_announcement_type' => 'field_related_announcement_type',
+    'field_prepropsal_loideadline_dat' => 'field_prepropsal_loideadline_dat',
+    'field_proposal_deadline' => 'field_proposal_deadline',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
+    'field_opportunity_number' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_proposal_required' => array(
-      'sortable' => 0,
+    'field_related_url' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title_1' => array(
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -1322,15 +1332,27 @@ function hjffeatures_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
+    'field_related_program' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
     'field_related_announcement_type' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'title_1' => array(
-      'sortable' => 0,
+    'field_prepropsal_loideadline_dat' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_proposal_deadline' => array(
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',

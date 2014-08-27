@@ -1096,6 +1096,15 @@ function hjffeatures_rdf_default_mappings() {
     'field_related_rads' => array(
       'predicates' => array(),
     ),
+    'field_client_related_success_sto' => array(
+      'predicates' => array(),
+    ),
+    'field_related_service' => array(
+      'predicates' => array(),
+    ),
+    'field_client_related_service' => array(
+      'predicates' => array(),
+    ),
   );
 
   // Exported RDF mapping: events
@@ -1225,6 +1234,9 @@ function hjffeatures_rdf_default_mappings() {
       'predicates' => array(),
     ),
     'field_related_program' => array(
+      'predicates' => array(),
+    ),
+    'field_funding_related_services' => array(
       'predicates' => array(),
     ),
   );
@@ -1594,6 +1606,12 @@ function hjffeatures_rdf_default_mappings() {
     'field_related_clientbis' => array(
       'predicates' => array(),
     ),
+    'field_related_success_story' => array(
+      'predicates' => array(),
+    ),
+    'field_service_related_success_st' => array(
+      'predicates' => array(),
+    ),
   );
 
   // Exported RDF mapping: sponsor
@@ -1764,6 +1782,9 @@ function hjffeatures_rdf_default_mappings() {
       ),
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
+    ),
+    'field_success_story_related_serv' => array(
+      'predicates' => array(),
     ),
   );
 
