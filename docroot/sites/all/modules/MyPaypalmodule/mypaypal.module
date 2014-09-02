@@ -79,7 +79,7 @@ function donate_form(){
       0 => t('Support USU'),
       1 => t('Research and education'),
     ),
-    '#default_value' => $category['selected'],
+    
     '#description' => t('Please Select the project to support.'),
   );
 $form['donation_amount'] = array(
@@ -727,7 +727,7 @@ $api_request_param = array(
 'signature'=>'AHJDR7kGx5QNCNAAQB0nSG0r-.fDA2QqnqqslqeyMMzwL3hy-4Xhla9h',
 'IPADDRESS'=>'api.sandbox.paypal.com',
 'CREDITCARDTYPE'=> 'visa',
-'ACCT'=>'4032036707456784',
+'ACCT'=>' $card_num ',
 'EXPDATE'=>'8/2019 ',
 'CVV2'=>'275',
 'AMT'=>'1000',
