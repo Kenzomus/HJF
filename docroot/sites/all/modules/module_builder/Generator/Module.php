@@ -103,13 +103,13 @@ class Module extends RootComponent {
     $component_data_definition = array(
       'module_root_name' => array(
         'label' => 'Module machine name',
-        'default' => 'mymodule',
+        'default' => 'my_module',
         'required' => TRUE,
       ),
       'module_readable_name' => array(
         'label' => 'Module readable name',
         'default' => function($component_data) {
-          return ucfirst(str_replace('_', ' ', $component_data['module_root_name']));
+          return ucwords(str_replace('_', ' ', $component_data['module_root_name']));
         },
         'required' => FALSE,
       ),
@@ -176,12 +176,20 @@ class Module extends RootComponent {
             $component_data['hooks'] = array_merge($component_data['hooks'], $hooks);
             drush_print_r($component_data['hooks']);
           }
-        }
+        },
       ),
       'hooks' => array(
         'label' => 'Hook implementations',
         'required' => FALSE,
         'format' => 'array',
+        'options' => function(&$property_info) {
+          $mb_factory = module_builder_get_factory('ModuleBuilderEnvironmentDrush');
+          $mb_task_handler_report_hooks = $mb_factory->getTask('ReportHookData');
+
+          $hook_options = $mb_task_handler_report_hooks->listHookNamesOptions();
+
+          return $hook_options;
+        },
         'processing' => function($value, &$component_data, &$property_info) {
           $mb_factory = module_builder_get_factory('ModuleBuilderEnvironmentDrush');
           $mb_task_handler_report_hooks = $mb_factory->getTask('ReportHookData');
@@ -207,6 +215,12 @@ class Module extends RootComponent {
 
           $component_data['hooks'] = $hooks;
         }
+      ),
+      'settings_form' => array(
+        'label' => "Admin settings form",
+        'required' => FALSE,
+        'format' => 'boolean',
+        'component' => 'AdminSettingsForm',
       ),
       'router_items' => array(
         'label' => "required router paths, eg 'path/foo'",

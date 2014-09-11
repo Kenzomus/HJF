@@ -374,6 +374,26 @@ function hjffeatures_default_page_manager_handlers() {
     $pane->uuid = '8f877d27-454d-4b10-82fd-0cedfbe0065a';
     $display->content['new-8f877d27-454d-4b10-82fd-0cedfbe0065a'] = $pane;
     $display->panels['right'][4] = 'new-8f877d27-454d-4b10-82fd-0cedfbe0065a';
+    $pane = new stdClass();
+    $pane->pid = 'new-d9be104c-ed7a-425b-ae16-c56794a28d02';
+    $pane->panel = 'right';
+    $pane->type = 'forward_node';
+    $pane->subtype = 'forward_node';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'stylizer:mysecondtes',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = 'd9be104c-ed7a-425b-ae16-c56794a28d02';
+    $display->content['new-d9be104c-ed7a-425b-ae16-c56794a28d02'] = $pane;
+    $display->panels['right'][5] = 'new-d9be104c-ed7a-425b-ae16-c56794a28d02';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-1ceec916-0363-40f3-ab7d-6441b29d2d84';
   $handler->conf['display'] = $display;
@@ -721,6 +741,7 @@ function hjffeatures_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'stylizer:mysecondtes',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -861,7 +882,7 @@ function hjffeatures_default_page_manager_pages() {
   $handler->weight = 0;
   $handler->conf = array(
     'title' => 'Paneldifferentview',
-    'no_blocks' => 0,
+    'no_blocks' => 1,
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
@@ -1574,7 +1595,7 @@ function hjffeatures_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'foundation_2col_stacked';
+  $display->layout = 'foundation_1col';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1593,7 +1614,7 @@ function hjffeatures_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c3831772-0d5f-4c0c-85be-bccc09a90b3b';
-    $pane->panel = 'left';
+    $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1609,6 +1630,7 @@ function hjffeatures_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'stylizer:mysecondtes',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1616,7 +1638,7 @@ function hjffeatures_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c3831772-0d5f-4c0c-85be-bccc09a90b3b';
     $display->content['new-c3831772-0d5f-4c0c-85be-bccc09a90b3b'] = $pane;
-    $display->panels['left'][0] = 'new-c3831772-0d5f-4c0c-85be-bccc09a90b3b';
+    $display->panels['middle'][0] = 'new-c3831772-0d5f-4c0c-85be-bccc09a90b3b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

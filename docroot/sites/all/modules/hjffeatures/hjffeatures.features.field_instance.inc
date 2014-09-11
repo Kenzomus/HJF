@@ -681,6 +681,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -723,6 +729,12 @@ function hjffeatures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -770,6 +782,12 @@ function hjffeatures_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => -1,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -821,6 +839,12 @@ function hjffeatures_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 10,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -884,6 +908,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -932,10 +962,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 5,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -990,10 +1029,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 4,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1053,6 +1101,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'image',
         'weight' => 1,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1108,6 +1162,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1152,6 +1212,12 @@ function hjffeatures_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 3,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1204,10 +1270,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 13,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1265,6 +1340,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'module' => 'text',
@@ -1318,6 +1399,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 9,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'hidden',
         'module' => 'list',
@@ -1369,6 +1456,12 @@ function hjffeatures_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 10,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1440,6 +1533,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 5,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -1510,6 +1609,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 7,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'hidden',
         'module' => 'list',
@@ -1562,6 +1667,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 6,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'hidden',
         'module' => 'list',
@@ -1605,15 +1716,27 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => 0,
         ),
         'type' => 'entityreference_label',
         'weight' => 1,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => 0,
         ),
         'type' => 'entityreference_label',
@@ -1676,15 +1799,27 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 3,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1737,15 +1872,27 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 2,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1800,6 +1947,12 @@ function hjffeatures_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 4,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -1861,6 +2014,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 12,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1920,6 +2079,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -1962,6 +2127,12 @@ function hjffeatures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -2008,6 +2179,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -2050,10 +2227,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 2,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2102,10 +2288,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 1,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2157,6 +2352,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -2201,6 +2402,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -2243,9 +2450,18 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -2302,6 +2518,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'email_default',
         'weight' => 5,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2345,6 +2567,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_plain',
         'weight' => 6,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2385,6 +2613,12 @@ function hjffeatures_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 4,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2431,10 +2665,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 7,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2486,6 +2729,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -2528,6 +2777,12 @@ function hjffeatures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -2573,6 +2828,12 @@ function hjffeatures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -2622,6 +2883,12 @@ function hjffeatures_field_default_field_instances() {
         'type' => 'image',
         'weight' => 2,
       ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2667,10 +2934,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 4,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2719,10 +2995,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 1,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2771,10 +3056,19 @@ function hjffeatures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'colorbox_node_height' => 600,
+          'colorbox_node_link' => FALSE,
+          'colorbox_node_width' => 600,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 6,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2824,6 +3118,12 @@ function hjffeatures_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 5,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2876,6 +3176,12 @@ function hjffeatures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'forward' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(

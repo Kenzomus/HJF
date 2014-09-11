@@ -17,14 +17,6 @@ function hjffeatures_apachesolr_environments() {
   $environment->url = 'http://useast1-c6.acquia-search.com/solr/EJVX-55996';
   $environment->service_class = 'AcquiaSearchService';
   $environment->conf = array(
-    'apachesolr_index_last' => array(
-      'node' => array(
-        'last_changed' => '1408634703',
-        'last_entity_id' => '306',
-      ),
-    ),
-    'apachesolr_index_updated' => 0,
-    'apachesolr_last_optimize' => 1408673942,
     'apachesolr_search_facet_pages' => '',
     'apachesolr_search_show_facets' => 1,
   );
@@ -33,18 +25,19 @@ function hjffeatures_apachesolr_environments() {
       0 => 'announcement_type',
       1 => 'article',
       2 => 'clients',
-      3 => 'events',
-      4 => 'faq',
-      5 => 'funding_opportunity',
-      6 => 'page',
-      7 => 'panel',
-      8 => 'program',
-      9 => 'rads',
-      10 => 'services',
-      11 => 'sponsor',
-      12 => 'srvices_category',
-      13 => 'succes_story',
-      14 => 'webform',
+      3 => 'content_slider',
+      4 => 'events',
+      5 => 'faq',
+      6 => 'funding_opportunity',
+      7 => 'page',
+      8 => 'panel',
+      9 => 'program',
+      10 => 'rads',
+      11 => 'services',
+      12 => 'sponsor',
+      13 => 'srvices_category',
+      14 => 'succes_story',
+      15 => 'webform',
     ),
   );
   $export['acquia_search_server_1'] = $environment;
@@ -55,28 +48,29 @@ function hjffeatures_apachesolr_environments() {
   $environment->name = 'localhost server';
   $environment->url = 'http://localhost:8983/solr';
   $environment->service_class = '';
-  $environment->conf = array(
-    'apachesolr_index_last' => array(),
-  );
+  $environment->conf = array();
   $environment->index_bundles = array(
     'node' => array(
       0 => 'announcement_type',
       1 => 'article',
       2 => 'clients',
-      3 => 'events',
-      4 => 'faq',
-      5 => 'funding_opportunity',
-      6 => 'page',
-      7 => 'panel',
-      8 => 'program',
-      9 => 'rads',
-      10 => 'research_program',
-      11 => 'rockville_pike',
-      12 => 'services',
-      13 => 'sponsor',
-      14 => 'srvices_category',
-      15 => 'succes_story',
-      16 => 'webform',
+      3 => 'content_slider',
+      4 => 'events',
+      5 => 'faq',
+      6 => 'funding_opportunity',
+      7 => 'job_post',
+      8 => 'news',
+      9 => 'page',
+      10 => 'panel',
+      11 => 'program',
+      12 => 'rads',
+      13 => 'research_program',
+      14 => 'rockville_pike',
+      15 => 'services',
+      16 => 'sponsor',
+      17 => 'srvices_category',
+      18 => 'succes_story',
+      19 => 'webform',
     ),
   );
   $export['solr'] = $environment;
