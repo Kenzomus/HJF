@@ -296,24 +296,6 @@ function hjffeatures_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:content/about',
   );
-  // Exported menu link: main-menu_donate-by-mail-:donation/Donate by Mail 
-  $menu_links['main-menu_donate-by-mail-:donation/Donate by Mail '] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'donation/Donate by Mail ',
-    'router_path' => 'donation/Donate by Mail ',
-    'link_title' => 'Donate by Mail ',
-    'options' => array(
-      'identifier' => 'main-menu_donate-by-mail-:donation/Donate by Mail ',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 1,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_donation:donation',
-  );
   // Exported menu link: main-menu_donation:donation
   $menu_links['main-menu_donation:donation'] = array(
     'menu_name' => 'main-menu',
@@ -572,24 +554,6 @@ function hjffeatures_menu_default_menu_links() {
     'weight' => -28,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_hjf-donation-form-:donation/HJF_donation_form 
-  $menu_links['main-menu_hjf-donation-form-:donation/HJF_donation_form '] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'donation/HJF_donation_form ',
-    'router_path' => 'donation/HJF_donation_form ',
-    'link_title' => 'HJF Donation Form ',
-    'options' => array(
-      'identifier' => 'main-menu_hjf-donation-form-:donation/HJF_donation_form ',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 4,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_donation:donation',
-  );
   // Exported menu link: main-menu_home:<front>
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -737,24 +701,6 @@ function hjffeatures_menu_default_menu_links() {
     'weight' => 1,
     'customized' => 0,
     'parent_identifier' => 'main-menu_careers:node/381',
-  );
-  // Exported menu link: main-menu_privacy-policy-:donation/Privacy Policy 
-  $menu_links['main-menu_privacy-policy-:donation/Privacy Policy '] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'donation/Privacy Policy ',
-    'router_path' => 'donation/Privacy Policy ',
-    'link_title' => 'Privacy Policy ',
-    'options' => array(
-      'identifier' => 'main-menu_privacy-policy-:donation/Privacy Policy ',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 3,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_donation:donation',
   );
   // Exported menu link: main-menu_program-management:node/206
   $menu_links['main-menu_program-management:node/206'] = array(
@@ -4340,7 +4286,6 @@ function hjffeatures_menu_default_menu_links() {
   t('Development');
   t('Directions to HJF');
   t('Display Suite');
-  t('Donate by Mail ');
   t('Donate for Military Medical Education and Research');
   t('Donation');
   t('Email Contact Form Settings');
@@ -4381,7 +4326,6 @@ function hjffeatures_menu_default_menu_links() {
   t('HJF 2012 Annual Report');
   t('HJF 2013 Annual Report');
   t('HJF Contacts ');
-  t('HJF Donation Form ');
   t('Help');
   t('History');
   t('Home');
@@ -4420,7 +4364,6 @@ function hjffeatures_menu_default_menu_links() {
   t('People');
   t('Performance');
   t('Postion Category');
-  t('Privacy Policy ');
   t('Program');
   t('Program Management');
   t('Proposal Development');
