@@ -20,7 +20,7 @@ function hjffeatures_default_ctools_custom_content() {
   $content->settings = array(
     'admin_title' => 'Contact us',
     'title' => 'Contact Us',
-    'body' => '<p>E-mail : %node:field_contact_email</p>
+    'body' => '<p><a href="/email/node/721/field_dpt_e_mail">Contact by email</a></p>
 
 <p>Phone :%node:field_contact_phone</p>
 ',
@@ -28,6 +28,23 @@ function hjffeatures_default_ctools_custom_content() {
     'substitute' => 1,
   );
   $export['contact_service'] = $content;
+
+  $content = new stdClass();
+  $content->disabled = FALSE; /* Edit this to true to make a default content disabled initially */
+  $content->api_version = 1;
+  $content->name = 'donation_disclaimer';
+  $content->admin_title = 'Donation disclaimer';
+  $content->admin_description = 'appears in all pages under donation as disclaimer';
+  $content->category = '';
+  $content->settings = array(
+    'admin_title' => 'Donation disclaimer',
+    'title' => '',
+    'body' => '<p><span style="font-size:10px">All HJF fundraising efforts reflected on this website are conducted exclusively by HJF as a 501(c)(3) tax–exempt (not–for–profit) corporation. In no event is any fundraising or solicitation of funds being made, directly or indirectly, by any officer or employee of the United States of America or any department, institution or agency thereof. The Independent Charities of America seal of approval is a service mark of Independent Charities of America and is used under license. HJF, and not Independent Charities of America, is responsible for the contents of this website.</span></p>
+',
+    'format' => 'full_html',
+    'substitute' => 1,
+  );
+  $export['donation_disclaimer'] = $content;
 
   $content = new stdClass();
   $content->disabled = FALSE; /* Edit this to true to make a default content disabled initially */

@@ -104,6 +104,42 @@ function hjffeatures_user_default_permissions() {
     'module' => 'dashboard',
   );
 
+  // Exported permission: 'access devel information'.
+  $permissions['access devel information'] = array(
+    'name' => 'access devel information',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'devel',
+  );
+
+  // Exported permission: 'access epostcard'.
+  $permissions['access epostcard'] = array(
+    'name' => 'access epostcard',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'access forward'.
+  $permissions['access forward'] = array(
+    'name' => 'access forward',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'access googlechat'.
+  $permissions['access googlechat'] = array(
+    'name' => 'access googlechat',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googlechat',
+  );
+
   // Exported permission: 'access overlay'.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
@@ -184,6 +220,15 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'add media from remote sources'.
+  $permissions['add media from remote sources'] = array(
+    'name' => 'add media from remote sources',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_internet',
   );
 
   // Exported permission: 'admin_classes'.
@@ -276,6 +321,15 @@ function hjffeatures_user_default_permissions() {
     'module' => 'contact',
   );
 
+  // Exported permission: 'administer content slider'.
+  $permissions['administer content slider'] = array(
+    'name' => 'administer content slider',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'content_slider',
+  );
+
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -321,6 +375,13 @@ function hjffeatures_user_default_permissions() {
     'module' => 'conditional_fields',
   );
 
+  // Exported permission: 'administer donations'.
+  $permissions['administer donations'] = array(
+    'name' => 'administer donations',
+    'roles' => array(),
+    'module' => 'donate',
+  );
+
   // Exported permission: 'administer entity view modes'.
   $permissions['administer entity view modes'] = array(
     'name' => 'administer entity view modes',
@@ -337,6 +398,24 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'facetapi',
+  );
+
+  // Exported permission: 'administer faq'.
+  $permissions['administer faq'] = array(
+    'name' => 'administer faq',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'faq',
+  );
+
+  // Exported permission: 'administer faq order'.
+  $permissions['administer faq order'] = array(
+    'name' => 'administer faq order',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'faq',
   );
 
   // Exported permission: 'administer features'.
@@ -402,6 +481,24 @@ function hjffeatures_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer forward'.
+  $permissions['administer forward'] = array(
+    'name' => 'administer forward',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'administer googlechat'.
+  $permissions['administer googlechat'] = array(
+    'name' => 'administer googlechat',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googlechat',
+  );
+
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -418,6 +515,15 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
+  );
+
+  // Exported permission: 'administer media'.
+  $permissions['administer media'] = array(
+    'name' => 'administer media',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'administer menu'.
@@ -715,9 +821,30 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create content_slider content'.
+  $permissions['create content_slider content'] = array(
+    'name' => 'create content_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create department content'.
+  $permissions['create department content'] = array(
+    'name' => 'create department content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create events content'.
   $permissions['create events content'] = array(
     'name' => 'create events content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create faq content'.
+  $permissions['create faq content'] = array(
+    'name' => 'create faq content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -749,6 +876,34 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create guide_main_category content'.
+  $permissions['create guide_main_category content'] = array(
+    'name' => 'create guide_main_category content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create guide_steps content'.
+  $permissions['create guide_steps content'] = array(
+    'name' => 'create guide_steps content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create job_post content'.
+  $permissions['create job_post content'] = array(
+    'name' => 'create job_post content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create locations content'.
+  $permissions['create locations content'] = array(
+    'name' => 'create locations content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create mini panels'.
   $permissions['create mini panels'] = array(
     'name' => 'create mini panels',
@@ -756,6 +911,13 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels_mini',
+  );
+
+  // Exported permission: 'create news content'.
+  $permissions['create news content'] = array(
+    'name' => 'create news content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'create page content'.
@@ -909,6 +1071,20 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any content_slider content'.
+  $permissions['delete any content_slider content'] = array(
+    'name' => 'delete any content_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any department content'.
+  $permissions['delete any department content'] = array(
+    'name' => 'delete any department content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
@@ -925,9 +1101,30 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any faq content'.
+  $permissions['delete any faq content'] = array(
+    'name' => 'delete any faq content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any funding_opportunity content'.
   $permissions['delete any funding_opportunity content'] = array(
     'name' => 'delete any funding_opportunity content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any guide_main_category content'.
+  $permissions['delete any guide_main_category content'] = array(
+    'name' => 'delete any guide_main_category content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any guide_steps content'.
+  $permissions['delete any guide_steps content'] = array(
+    'name' => 'delete any guide_steps content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -939,6 +1136,27 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any job_post content'.
+  $permissions['delete any job_post content'] = array(
+    'name' => 'delete any job_post content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any locations content'.
+  $permissions['delete any locations content'] = array(
+    'name' => 'delete any locations content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any news content'.
+  $permissions['delete any news content'] = array(
+    'name' => 'delete any news content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any page content'.
@@ -1074,6 +1292,20 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own content_slider content'.
+  $permissions['delete own content_slider content'] = array(
+    'name' => 'delete own content_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own department content'.
+  $permissions['delete own department content'] = array(
+    'name' => 'delete own department content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own document files'.
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
@@ -1090,12 +1322,33 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own faq content'.
+  $permissions['delete own faq content'] = array(
+    'name' => 'delete own faq content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own funding_opportunity content'.
   $permissions['delete own funding_opportunity content'] = array(
     'name' => 'delete own funding_opportunity content',
     'roles' => array(
       'funding_opportunities_Staff' => 'funding_opportunities_Staff',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own guide_main_category content'.
+  $permissions['delete own guide_main_category content'] = array(
+    'name' => 'delete own guide_main_category content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own guide_steps content'.
+  $permissions['delete own guide_steps content'] = array(
+    'name' => 'delete own guide_steps content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -1106,6 +1359,27 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own job_post content'.
+  $permissions['delete own job_post content'] = array(
+    'name' => 'delete own job_post content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own locations content'.
+  $permissions['delete own locations content'] = array(
+    'name' => 'delete own locations content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own news content'.
+  $permissions['delete own news content'] = array(
+    'name' => 'delete own news content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own page content'.
@@ -1252,6 +1526,8 @@ function hjffeatures_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1351,6 +1627,20 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any content_slider content'.
+  $permissions['edit any content_slider content'] = array(
+    'name' => 'edit any content_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any department content'.
+  $permissions['edit any department content'] = array(
+    'name' => 'edit any department content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
@@ -1367,9 +1657,30 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any faq content'.
+  $permissions['edit any faq content'] = array(
+    'name' => 'edit any faq content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any funding_opportunity content'.
   $permissions['edit any funding_opportunity content'] = array(
     'name' => 'edit any funding_opportunity content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any guide_main_category content'.
+  $permissions['edit any guide_main_category content'] = array(
+    'name' => 'edit any guide_main_category content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any guide_steps content'.
+  $permissions['edit any guide_steps content'] = array(
+    'name' => 'edit any guide_steps content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -1381,6 +1692,20 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit any job_post content'.
+  $permissions['edit any job_post content'] = array(
+    'name' => 'edit any job_post content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any locations content'.
+  $permissions['edit any locations content'] = array(
+    'name' => 'edit any locations content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit any page content'.
@@ -1482,6 +1807,15 @@ function hjffeatures_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
+  // Exported permission: 'edit media'.
+  $permissions['edit media'] = array(
+    'name' => 'edit media',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
+  );
+
   // Exported permission: 'edit own announcement_type content'.
   $permissions['edit own announcement_type content'] = array(
     'name' => 'edit own announcement_type content',
@@ -1525,6 +1859,20 @@ function hjffeatures_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: 'edit own content_slider content'.
+  $permissions['edit own content_slider content'] = array(
+    'name' => 'edit own content_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own department content'.
+  $permissions['edit own department content'] = array(
+    'name' => 'edit own department content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own document files'.
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
@@ -1541,12 +1889,33 @@ function hjffeatures_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own faq content'.
+  $permissions['edit own faq content'] = array(
+    'name' => 'edit own faq content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own funding_opportunity content'.
   $permissions['edit own funding_opportunity content'] = array(
     'name' => 'edit own funding_opportunity content',
     'roles' => array(
       'funding_opportunities_Staff' => 'funding_opportunities_Staff',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own guide_main_category content'.
+  $permissions['edit own guide_main_category content'] = array(
+    'name' => 'edit own guide_main_category content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own guide_steps content'.
+  $permissions['edit own guide_steps content'] = array(
+    'name' => 'edit own guide_steps content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -1557,6 +1926,20 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own job_post content'.
+  $permissions['edit own job_post content'] = array(
+    'name' => 'edit own job_post content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own locations content'.
+  $permissions['edit own locations content'] = array(
+    'name' => 'edit own locations content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own page content'.
@@ -1670,6 +2053,35 @@ function hjffeatures_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'entityconnect add button'.
+  $permissions['entityconnect add button'] = array(
+    'name' => 'entityconnect add button',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'funding_opportunities_Staff' => 'funding_opportunities_Staff',
+    ),
+    'module' => 'entityconnect',
+  );
+
+  // Exported permission: 'entityconnect edit button'.
+  $permissions['entityconnect edit button'] = array(
+    'name' => 'entityconnect edit button',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'funding_opportunities_Staff' => 'funding_opportunities_Staff',
+    ),
+    'module' => 'entityconnect',
+  );
+
+  // Exported permission: 'execute php code'.
+  $permissions['execute php code'] = array(
+    'name' => 'execute php code',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'devel',
+  );
+
   // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -1686,6 +2098,121 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'geocoder_service_all_handlers'.
+  $permissions['geocoder_service_all_handlers'] = array(
+    'name' => 'geocoder_service_all_handlers',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_exif'.
+  $permissions['geocoder_service_handler_exif'] = array(
+    'name' => 'geocoder_service_handler_exif',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_google'.
+  $permissions['geocoder_service_handler_google'] = array(
+    'name' => 'geocoder_service_handler_google',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_gpx'.
+  $permissions['geocoder_service_handler_gpx'] = array(
+    'name' => 'geocoder_service_handler_gpx',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_json'.
+  $permissions['geocoder_service_handler_json'] = array(
+    'name' => 'geocoder_service_handler_json',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_kml'.
+  $permissions['geocoder_service_handler_kml'] = array(
+    'name' => 'geocoder_service_handler_kml',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_latlon'.
+  $permissions['geocoder_service_handler_latlon'] = array(
+    'name' => 'geocoder_service_handler_latlon',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_mapquest_nominatim'.
+  $permissions['geocoder_service_handler_mapquest_nominatim'] = array(
+    'name' => 'geocoder_service_handler_mapquest_nominatim',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_wkt'.
+  $permissions['geocoder_service_handler_wkt'] = array(
+    'name' => 'geocoder_service_handler_wkt',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_yahoo'.
+  $permissions['geocoder_service_handler_yahoo'] = array(
+    'name' => 'geocoder_service_handler_yahoo',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'geocoder_service_handler_yandex'.
+  $permissions['geocoder_service_handler_yandex'] = array(
+    'name' => 'geocoder_service_handler_yandex',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'geocoder',
+  );
+
+  // Exported permission: 'import media'.
+  $permissions['import media'] = array(
+    'name' => 'import media',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
+  );
+
+  // Exported permission: 'make dontations'.
+  $permissions['make dontations'] = array(
+    'name' => 'make dontations',
+    'roles' => array(),
+    'module' => 'donate',
   );
 
   // Exported permission: 'manage features'.
@@ -1731,6 +2258,24 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'pathauto',
+  );
+
+  // Exported permission: 'override email address'.
+  $permissions['override email address'] = array(
+    'name' => 'override email address',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'override flood control'.
+  $permissions['override flood control'] = array(
+    'name' => 'override flood control',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
   );
 
   // Exported permission: 'post comments'.
@@ -1797,6 +2342,15 @@ function hjffeatures_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'shortcut',
+  );
+
+  // Exported permission: 'switch users'.
+  $permissions['switch users'] = array(
+    'name' => 'switch users',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'devel',
   );
 
   // Exported permission: 'use PHP for settings'.
@@ -1902,6 +2456,15 @@ function hjffeatures_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'use text format popup_tags'.
+  $permissions['use text format popup_tags'] = array(
+    'name' => 'use text format popup_tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: 'view advanced help index'.
   $permissions['view advanced help index'] = array(
     'name' => 'view advanced help index',
@@ -1938,6 +2501,17 @@ function hjffeatures_user_default_permissions() {
     'module' => 'date_repeat_field',
   );
 
+  // Exported permission: 'view faq page'.
+  $permissions['view faq page'] = array(
+    'name' => 'view faq page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'faq',
+  );
+
   // Exported permission: 'view files'.
   $permissions['view files'] = array(
     'name' => 'view files',
@@ -1947,6 +2521,15 @@ function hjffeatures_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view media'.
+  $permissions['view media'] = array(
+    'name' => 'view media',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media',
   );
 
   // Exported permission: 'view own files'.
