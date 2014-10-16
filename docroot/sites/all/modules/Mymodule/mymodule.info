@@ -1,4 +1,0 @@
-name= mymodule
-description = creating a module to dynamically add the referenced content type fields
-core=7.x
-Package =HJF mymodule

@@ -1,6 +1,0 @@
-name = mypaypal
-description =implement a payapl donation page
-Package = mypaypal
-core =7.x
-file[] =mypaypal.module
-
