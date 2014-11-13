@@ -21,7 +21,7 @@ base theme = zurb_foundation
 ; The "FILE" is the name of the stylesheet to add/override/remove.
 ; The "MEDIA" in the first set of brackets is a media type or a media query.
 ; Typical CSS media types include "all", "screen", "print", and "handheld". A
-; typical media query is "screen and (max-width: 320px)".
+MyCustom; typical media query is "screen and (max-width: 320px)".
 ;
 ; CSS2.1 media types: http://www.w3.org/TR/CSS21/media.html#media-types
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
@@ -29,7 +29,7 @@ base theme = zurb_foundation
 ; For CSS users, load the app.css file:
 stylesheets[all][] = css/app.css
 ; Comment the app.css file (above) if you're using sass to preprocess css:
-;stylesheets[all][] = css/STARTER.css
+stylesheets[all][] = css/MyCustom.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
